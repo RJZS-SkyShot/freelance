@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New GST Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-box">
+  <h2>New GST Registration</h2>
+
+  <form onsubmit="submitNewGST(event)">
+
+    <input id="name" placeholder="Full Name" required>
+
+    <input id="business" placeholder="Business Name" required>
+
+    <input id="pan" placeholder="PAN Number" required>
+
+    <input id="aadhaar" placeholder="Aadhaar Number">
+
+    <input id="mobile" placeholder="Mobile Number" required>
+
+    <input id="email" placeholder="Email ID">
+
+    <input id="address" placeholder="Business Address">
+
+    <select id="type">
+      <option>Sole Proprietor</option>
+      <option>Partnership</option>
+      <option>Private Limited</option>
+    </select>
+
+    <button>Apply Now</button>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

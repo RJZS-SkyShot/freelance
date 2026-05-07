@@ -1,0 +1,26 @@
+<div class="notes-grid" id="notesBox"></div>
+
+<script>
+fetch("http://localhost:5000/notes")
+.then(res => res.json())
+.then(data => {
+
+  const box = document.getElementById("notesBox");
+
+  data.forEach(note => {
+
+    const div = document.createElement("div");
+    div.className = "note-card";
+
+    div.innerHTML = `
+      <img src="${note.image}">
+      <h3>${note.title}</h3>
+      <h4>₹${note.price}</h4>
+      <button onclick="buyNote('${note.title}')">Buy</button>
+    `;
+
+    box.appendChild(div);
+  });
+
+});
+</script>

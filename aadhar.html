@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form-box">
+  <h2>Aadhaar Update</h2>
+  <form onsubmit="submitAadhar(event)">
+    <input id="name" placeholder="Full Name" required>
+    <input id="aadhaar" placeholder="Aadhaar Number" required>
+    <select id="updateType">
+      <option>Mobile Update</option>
+      <option>Address Update</option>
+      <option>Name Correction</option>
+    </select>
+    <input id="mobile" placeholder="Mobile Number">
+    <button>Submit</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
